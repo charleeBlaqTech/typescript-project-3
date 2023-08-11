@@ -4,23 +4,26 @@ export interface Item {
     checked: boolean
 }
 
+
 export default class ListItem implements Item{
     constructor(private _id: string = '', private _item: string, private _checked: boolean){
-
+        this._id = _id;
+        this._item = _item;
+        this._checked = _checked;
     }
 
 
     get id(): string{
-        return this._id
+        return this._id;
     }
 
     set id(id: string){
-        this._id = id
+        this._id = id;
     }
 
 
     get item(): string{
-        return this._item
+        return this._item;
     }
 
     set item(item: string){
