@@ -8,7 +8,9 @@ interface DOMList{
 
 
 export default class ListTemplate implements DOMList{
-    ul: HTMLUListElement
+    ul: HTMLUListElement;
+
+    static instance:ListTemplate = new ListTemplate();
 
     private constructor(){
         this.ul = document.getElementById('listItems') as HTMLUListElement
@@ -50,8 +52,8 @@ export default class ListTemplate implements DOMList{
                     this.render(fulllList);
                 })
 
-                li.append(check, label, button)
-
+                li.append(check, label, button);
+                this.ul.append(li);
 
         })
     }
