@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    flex: 1 1 12%;
+    font-size: 40px;
+    text-align: center;
+    color: orange;
+    margin-bottom: 30px;
+}
+
+#listItems{
+    flex: 1 1 70%;
+    width: 400px;
+    margin-bottom: 25px;
+}
+#listItems li{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: orchid;
+   margin-bottom: 10px;
+}
+#listItems li label{
+   font-size: 22px;
+   text-transform: capitalize;
+}
+#listItems li button{
+   width: 60px;
+   aspect-ratio: 4/2;
+   color: red;
+   cursor: pointer;
+}
+#listItems li input{
+   width: 60px;
+   aspect-ratio: 4/2;
+}
+
+#itemEntryForm{
+    flex: 1 1 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#itemEntryForm input{
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    background-color: grey;
+    color: #fff;
+    cursor: pointer;
+}
+#itemEntryForm input:focus{
+    background-color: #000;
+    color: #fff;
+}
+#itemEntryForm button{
+    width: 15%;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    background-color: green;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    cursor: pointer;
+
+}
+#clearItemsButton{
+    flex: 1 1 10%;
+    width: 220px;
+    height: 55px;
+    color: #fff;
+    padding: 20px;
+    background-color: red;
+    border-radius: 12px;
+    cursor: pointer;
+}
+

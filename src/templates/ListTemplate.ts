@@ -35,6 +35,8 @@ export default class ListTemplate implements DOMList{
 
                 check.addEventListener('change', ()=>{
                     item.checked = !item.checked;
+                    item.checked === true? label.style.textDecoration= "line-through": label.style.textDecoration= "none";
+                    
                     fulllList.save();
                 })
 
